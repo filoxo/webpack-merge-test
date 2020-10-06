@@ -1,0 +1,3 @@
+[submodule "webpack-merge"]
+	path = webpack-merge
+	url = https://github.com/survivejs/webpack-merge.git
