@@ -1,19 +1,17 @@
-const { mergeWithCustomize, customizeArray } = require("./webpack-merge/dist/index.js");
+const { mergeWithRules } = require("./webpack-merge/dist/index.js");
 const singleSpaDefaults = require("webpack-config-single-spa");
 
-const mergeRulesByTestMatch = mergeWithCustomize({
-  customizeArray: customizeArray({
-    module: {
-      rules: {
-        test: "match",
-        use: {
-          loader: "match",
-          options: "replace"
-        }
+const mergeRulesByTestMatch = mergeWithRules({
+  module: {
+    rules: {
+      test: "match",
+      use: {
+        loader: "match",
+        options: "replace"
       }
     }
-  })
-})
+  }
+});
 
 module.exports = (webpackConfigEnv) => {
   const defaultConfig = singleSpaDefaults({
