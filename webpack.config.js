@@ -1,4 +1,4 @@
-const { mergeWithCustomize, customizeArray } = require("webpack-merge");
+const { mergeWithCustomize, customizeArray } = require("./webpack-merge/dist/index.js");
 const singleSpaDefaults = require("webpack-config-single-spa");
 
 const mergeRulesByTestMatch = mergeWithCustomize({
