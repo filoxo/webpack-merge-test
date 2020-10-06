@@ -5,8 +5,7 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "single-spa-html": "^1.1.2",
-    "webpack-merge": "file:.yalc/webpack-merge"
+    "single-spa-html": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
